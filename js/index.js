@@ -24,7 +24,7 @@ const renderLink = (li, id) => {
         }
       })
       .catch((error) => {
-        alert("Failed to  remove task", error.message);
+        alert("Failed in deleting task", error.message);
       });
   });
 };
@@ -50,7 +50,7 @@ input.addEventListener("keypress", function (event) {
           input.focus();
         })
         .catch((error) => {
-          alert("Error saving task", error.message);
+          alert("Error adding a new task", error.message);
         });
     }
   }
@@ -66,7 +66,7 @@ const getTasks = () => {
       input.disabled = false;
     })
     .catch((error) => {
-      alert("Error retrieving tasks", error.message);
+      alert("Error fetching tasks", error.message);
     });
 };
 
