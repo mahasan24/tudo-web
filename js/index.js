@@ -1,7 +1,7 @@
 import { Todos } from "./class/Todos.js";
 const list = document.querySelector("ul");
 const input = document.querySelector("input");
-const BACKEND_URL = "http://localhost:4000";
+const BACKEND_URL = "https://tudo-web.onrender.com";
 const todos = new Todos(BACKEND_URL);
 
 input.disabled = true;
